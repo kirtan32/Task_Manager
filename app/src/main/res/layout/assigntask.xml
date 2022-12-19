@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:background="@android:color/white"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="295dp"
+        android:layout_height="295dp"
+        android:layout_centerInParent="true"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/layout">
+
+        <TextView
+            android:id="@+id/assigntext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:text="Task"
+            android:layout_marginLeft="15dp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/assignedittask"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:hint="Employee Task"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/assigntext"/>
+
+        <TextView
+            android:id="@+id/assignstardt"
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/assignedittask"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:paddingTop="5dp"
+            android:text="Start Time"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pickstartdt"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="pick"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/assignedittask"
+            android:layout_alignParentRight="true"
+            app:cornerRadius="10dp"
+            />
+
+        <TextView
+            android:id="@+id/assignenddt"
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/assignstardt"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:paddingTop="6dp"
+            android:text="End Time"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pickenddt"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="pick"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/pickstartdt"
+            android:layout_alignParentRight="true"
+            app:cornerRadius="10dp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAssign"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            app:cornerRadius="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="28dp"
+            android:text="Assign"
+            android:textColor="@color/white"
+            android:textSize="21dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

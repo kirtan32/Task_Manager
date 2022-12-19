@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Task Manager</string>
+
+    <string name="home_text">Home</string>
+    <string name="calender_text">Calender</string>
+    <string name="home">Home</string>
+    <string name="calender">Calender</string>
+    <string name="login">Login</string>
+    <string name="signup">SignUp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="create_account">Register</string>
+    <string name="employee_sign_up">Employee Sign Up</string>
+    <string name="employee_login">Employee Login</string>
+    <string name="admin_login">Admin Login</string>
+    <string name="name">Name</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="remaining_tasks">Remaining Tasks</string>
+    <string name="completed_tasks">Completed Tasks</string>
+    <string name="profile">Profile</string>
+    <!-- For Calender-->
+    <string name="back"><![CDATA[<]]></string>
+    <string name="forward"><![CDATA[>]]></string>
+    <string name="event">Event</string>
+
+</resources>

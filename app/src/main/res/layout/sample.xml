@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".employee.EmployeeHomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/empRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/empSignout"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/sign_out"
+                android:textColor="@color/white"
+                app:cornerRadius="10dp" />
+
+            <TextView
+                android:id="@+id/empProfileName"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Profile Name"
+                android:textColor="@color/black"
+
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/empRemainTaskTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/remaining_tasks"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/blue"
+            android:textSize="22sp"
+            android:textStyle="bold"
+
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/empRemainTaskRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/empRemainTaskTextView"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+
+            />
+
+        <TextView
+            android:id="@+id/empCompleteTaskTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/completed_tasks"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/blue"
+            android:textSize="22sp"
+            android:textStyle="bold"
+
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/empCompleteTaskRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+
+            />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
