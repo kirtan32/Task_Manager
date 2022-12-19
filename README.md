@@ -1,6 +1,11 @@
 # Task_Manager
-Task Manager Android APP
+Task Manager Android APP with Firebase Authentication & Database
 
+- Admin can assign the task to Employee & track the Employee tasks
+- Employee can track the remaining & completed tasks.
+- Employee can track task with Calender View.
+
+Starting Splash Screen
 ![image](https://user-images.githubusercontent.com/50762218/208385800-4560d4b9-ee33-4188-b765-9073ab2c6cd7.png)
 
 On Boarding Screen
